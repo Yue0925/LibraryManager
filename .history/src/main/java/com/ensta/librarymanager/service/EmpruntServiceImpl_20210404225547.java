@@ -18,6 +18,10 @@ public class EmpruntServiceImpl implements EmpruntService {
     //Singleton
     private static EmpruntServiceImpl instance;
     private EmpruntServiceImpl(){};
+    
+    /** 
+     * @return EmpruntServiceImpl
+     */
     public static EmpruntServiceImpl getInstance(){
         if (instance == null) {instance = new EmpruntServiceImpl();}
         return instance;
@@ -25,8 +29,7 @@ public class EmpruntServiceImpl implements EmpruntService {
  
     
     /** 
-     * Get all emprunts in database
-     * @return List<Emprunt> a list of total emprunts
+     * @return List<Emprunt>
      * @throws ServiceException
      */
     @Override
@@ -42,8 +45,7 @@ public class EmpruntServiceImpl implements EmpruntService {
 
     
     /** 
-     * Get all emprunts ongoing
-     * @return List<Emprunt> a list of all emprunts ongoing
+     * @return List<Emprunt>
      * @throws ServiceException
      */
     @Override
@@ -61,7 +63,6 @@ public class EmpruntServiceImpl implements EmpruntService {
 
     
     /** 
-     * Get all emprunts ongoing by the given member's id 
      * @param idMembre
      * @return List<Emprunt>
      * @throws ServiceException
@@ -79,7 +80,6 @@ public class EmpruntServiceImpl implements EmpruntService {
 
     
     /** 
-     * Get all emprunts ongoing by the given book's id 
      * @param idLivre
      * @return List<Emprunt>
      * @throws ServiceException
@@ -97,7 +97,6 @@ public class EmpruntServiceImpl implements EmpruntService {
 
     
     /** 
-     * Get an emprunt by the given id
      * @param id
      * @return Emprunt
      * @throws ServiceException
@@ -115,7 +114,6 @@ public class EmpruntServiceImpl implements EmpruntService {
 
     
     /** 
-     * Create an emprunt by the given parameters
      * @param idMembre
      * @param idLivre
      * @param dateEmprunt
@@ -135,7 +133,6 @@ public class EmpruntServiceImpl implements EmpruntService {
     
     
     /** 
-     * Return the book for the given emprunt's id
      * @param id
      * @throws ServiceException
      */
@@ -154,7 +151,6 @@ public class EmpruntServiceImpl implements EmpruntService {
 
     
     /** 
-     * Count the total emprunts in database
      * @return int
      * @throws ServiceException
      */
@@ -171,9 +167,8 @@ public class EmpruntServiceImpl implements EmpruntService {
 
     
     /** 
-     * Given a book's id, whether it can be borrowed
      * @param idLivre
-     * @return boolean true if the book is free
+     * @return boolean
      * @throws ServiceException
      */
     @Override
@@ -189,9 +184,8 @@ public class EmpruntServiceImpl implements EmpruntService {
 
     
     /** 
-     * Given a member's id, whether the membre enable to borrow a book
      * @param membre
-     * @return boolean true if he can
+     * @return boolean
      * @throws ServiceException
      */
     @Override

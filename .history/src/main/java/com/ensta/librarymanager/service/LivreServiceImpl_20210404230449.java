@@ -14,6 +14,10 @@ public class LivreServiceImpl implements LivreService{
     //Singleton
     private static LivreServiceImpl instance;
     private LivreServiceImpl(){};
+    
+    /** 
+     * @return LivreServiceImpl
+     */
     public static LivreServiceImpl getInstance(){
         if (instance == null) instance = new LivreServiceImpl();
         return instance;
@@ -21,7 +25,6 @@ public class LivreServiceImpl implements LivreService{
 
     
     /** 
-     * 
      * @return List<Livre>
      * @throws ServiceException
      */
