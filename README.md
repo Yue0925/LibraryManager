@@ -10,3 +10,7 @@ mvn clean install tomcat7:run -e
 ## Main Page
 
 http://localhost:8080/TP3Ensta
+
+## Fonctionnalités
+
+J'ai complété toute les méthodes && fonctionnalités
