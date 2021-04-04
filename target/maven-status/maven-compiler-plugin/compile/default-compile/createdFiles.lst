@@ -15,6 +15,7 @@ com/ensta/librarymanager/test/DaoTest.class
 com/ensta/librarymanager/service/MembreService.class
 com/ensta/librarymanager/dao/EmpruntDao.class
 com/ensta/librarymanager/exception/ServiceException.class
+com/ensta/librarymanager/servlet/DashboardServlet.class
 com/ensta/librarymanager/service/LivreService.class
 com/ensta/librarymanager/service/EmpruntServiceImpl.class
 com/ensta/librarymanager/dao/LivreDaoImpl.class

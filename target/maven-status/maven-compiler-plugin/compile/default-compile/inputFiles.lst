@@ -6,6 +6,7 @@
 /home/yue/AM1/IN205/Projet2/LibraryManager/LibraryManager/src/main/java/com/ensta/librarymanager/exception/DaoException.java
 /home/yue/AM1/IN205/Projet2/LibraryManager/LibraryManager/src/main/java/com/ensta/librarymanager/exception/ServiceException.java
 /home/yue/AM1/IN205/Projet2/LibraryManager/LibraryManager/src/main/java/com/ensta/librarymanager/dao/LivreDao.java
+/home/yue/AM1/IN205/Projet2/LibraryManager/LibraryManager/src/main/java/com/ensta/librarymanager/servlet/DashboardServlet.java
 /home/yue/AM1/IN205/Projet2/LibraryManager/LibraryManager/src/main/java/com/ensta/librarymanager/service/MembreService.java
 /home/yue/AM1/IN205/Projet2/LibraryManager/LibraryManager/src/main/java/com/ensta/librarymanager/test/ModeleTest.java
 /home/yue/AM1/IN205/Projet2/LibraryManager/LibraryManager/src/main/java/com/ensta/librarymanager/test/ServiceTest.java
