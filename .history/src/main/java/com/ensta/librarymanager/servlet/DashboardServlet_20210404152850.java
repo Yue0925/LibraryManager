@@ -46,8 +46,8 @@ public class DashboardServlet extends HttpServlet {
              nbMembres = membreService.count();
              nbEmprunts = empruntService.count();
              empruntsCourant = empruntService.getListCurrent();
-            /*System.out.println("nbLivres: "+ nbLivres + " nbMembres: " + nbMembres + 
-            " nbEmprunts: " + nbEmprunts + " empruntsCourant: " + empruntsCourant);*/
+            System.out.println("nbLivres: "+ nbLivres + " nbMembres: " + nbMembres + 
+            " nbEmprunts: " + nbEmprunts + " empruntsCourant: " + empruntsCourant);
         } catch (Exception e) {
             System.out.println(e.getMessage());
             e.printStackTrace();

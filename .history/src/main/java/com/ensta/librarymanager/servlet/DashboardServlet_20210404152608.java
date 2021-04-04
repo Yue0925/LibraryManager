@@ -36,18 +36,14 @@ public class DashboardServlet extends HttpServlet {
         LivreService livreService = LivreServiceImpl.getInstance();
         MembreService membreService = MembreServiceImpl.getInstance();
         EmpruntService empruntService = EmpruntServiceImpl.getInstance();
-        int nbLivres = 0;
-        int nbMembres = 0;
-        int nbEmprunts = 0;
-        List<Emprunt> empruntsCourant = new ArrayList<>();
 
         try {
-             nbLivres = livreService.count();
-             nbMembres = membreService.count();
-             nbEmprunts = empruntService.count();
-             empruntsCourant = empruntService.getListCurrent();
-            /*System.out.println("nbLivres: "+ nbLivres + " nbMembres: " + nbMembres + 
-            " nbEmprunts: " + nbEmprunts + " empruntsCourant: " + empruntsCourant);*/
+            int nbLivres = livreService.count();
+            int nbMembres = membreService.count();
+            int nbEmprunts = empruntService.count();
+            List<Emprunt> empruntsCourant = empruntService.getListCurrent();
+            System.out.println("nbLivres: "+ nbLivres + " nbMembres: " + nbMembres + 
+            " nbEmprunts: " + nbEmprunts + " empruntsCourant: " + empruntsCourant);
         } catch (Exception e) {
             System.out.println(e.getMessage());
             e.printStackTrace();

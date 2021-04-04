@@ -40,7 +40,6 @@ public class EmpruntServiceImpl implements EmpruntService {
         List<Emprunt> emprunt = new ArrayList<>();
         try {
             emprunt = empruntDao.getListCurrent();
-            return emprunt;
         } catch (DaoException e) {
             System.out.println(e.getMessage());
             throw new ServiceException("Error in getListCurrent() of EmpruntServiceImpl", e);

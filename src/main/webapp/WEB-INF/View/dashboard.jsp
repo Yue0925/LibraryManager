@@ -69,15 +69,6 @@
                     </tr>
                 </thead>
                 <tbody id="results">
-                    <tr>
-                        <td>Titre du livre, <em>de Nom de l'auteur</em></td>
-                        <td>Prénom et nom du membre emprunteur</td>
-                        <td>Date de l'emprunt</td>
-                        <td>
-                            <a href="emprunt_return?id=idDeLEmprunt"><ion-icon class="table-item" name="log-in"></a>
-                        </td>
-                    </tr>
-
                     <c:if test="${!empruntsCourant.isEmpty()}">
                       <c:forEach items="${empruntsCourant}" var="emprunt">
                         <tr>
@@ -85,7 +76,7 @@
                           <td>${emprunt.getMembre().getPrenom()} ${emprunt.getMembre().getNom()}</td>
                           <td>${emprunt.getDateEmprunt()}</td>
                           <td>
-                            <a href="emprunt_return?id=${emprunt.id}"><ion-icon class="table-item" name="log-in"></a>
+                            <a href="emprunt_return?id=${emprunt.getId()}"><ion-icon class="table-item" name="log-in"></a>
                           </td>
                         </tr>
                       </c:forEach>

@@ -76,7 +76,7 @@
                           <td>${emprunt.getMembre().getPrenom()} ${emprunt.getMembre().getNom()}</td>
                           <td>${emprunt.getDateEmprunt()}</td>
                           <td>
-                            <a href="emprunt_return?id=${emprunt.getId()}"><ion-icon class="table-item" name="log-in"></a>
+                            <a href="emprunt_return?id=${emprunt.id}"><ion-icon class="table-item" name="log-in"></a>
                           </td>
                         </tr>
                       </c:forEach>

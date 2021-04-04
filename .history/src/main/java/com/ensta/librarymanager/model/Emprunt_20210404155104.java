@@ -28,8 +28,8 @@ public class Emprunt {
         this.id = id;
         this.livre = livre;
         this.membre = membre;
-        this.dateEmprunt =  dateEmprunt;
-        this.dateRetour = dateRetour;
+        this.dateEmprunt =  LocalDate.parse(dateEmprunt);
+        this.dateRetour = LocalDate.parse(dateRetour);
     }
     public Emprunt(){}
 
@@ -39,7 +39,7 @@ public class Emprunt {
     @Override
     public String toString() {
         return "id: "+id+" livre: " +livre+" membre: "+membre + " dateEmprunt: "+
-        dateEmprunt+" dateRetour: "+dateRetour+"";
+        dateEmprunt+" dateRetour: "+dateRetour;
     }
 
     /**

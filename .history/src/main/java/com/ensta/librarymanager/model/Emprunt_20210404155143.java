@@ -39,7 +39,7 @@ public class Emprunt {
     @Override
     public String toString() {
         return "id: "+id+" livre: " +livre+" membre: "+membre + " dateEmprunt: "+
-        dateEmprunt+" dateRetour: "+dateRetour+"";
+        dateEmprunt+" dateRetour: "+dateRetour;
     }
 
     /**
